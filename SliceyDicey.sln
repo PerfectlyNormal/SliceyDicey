@@ -5,7 +5,15 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SliceyDicey.Lib", "SliceyDicey.Lib\SliceyDicey.Lib.csproj", "{E49EC2FF-9ED9-408B-8190-61C279AFD18E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliceyDicey.Tests", "SliceyDicey.Tests\SliceyDicey.Tests.csproj", "{E8472AE0-5A8A-42FC-B257-F48617C29F1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SliceyDicey.Tests", "SliceyDicey.Tests\SliceyDicey.Tests.csproj", "{E8472AE0-5A8A-42FC-B257-F48617C29F1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{38D513DD-69C4-40A0-A4AE-DDB9E67E4652}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
