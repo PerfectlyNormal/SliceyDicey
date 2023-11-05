@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SliceyDicey.Lib", "SliceyDicey.Lib\SliceyDicey.Lib.csproj", "{E49EC2FF-9ED9-408B-8190-61C279AFD18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliceyDicey.Tests", "SliceyDicey.Tests\SliceyDicey.Tests.csproj", "{E8472AE0-5A8A-42FC-B257-F48617C29F1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E49EC2FF-9ED9-408B-8190-61C279AFD18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49EC2FF-9ED9-408B-8190-61C279AFD18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49EC2FF-9ED9-408B-8190-61C279AFD18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49EC2FF-9ED9-408B-8190-61C279AFD18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D50C4B1-C4F7-423B-9F69-58A353E501DB}
+	EndGlobalSection
+EndGlobal
