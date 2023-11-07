@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.1.0] - 2023-11-07
+
 ### Added
 
 - Initial release
 
+[unreleased]: https://github.com/PerfectlyNormal/SliceyDicey/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/PerfectlyNormal/SliceyDicey/tree/release/v0.1.0

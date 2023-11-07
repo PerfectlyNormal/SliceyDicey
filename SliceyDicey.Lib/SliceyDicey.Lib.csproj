@@ -6,4 +6,25 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SliceyDicey</PackageId>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/PerfectlyNormal/SliceyDicey</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PerfectlyNormal/SliceyDicey.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Per Christian B. Viken</Authors>
+    <Description>
+			Provides a library for parsing ASCII-based GCode files
+    </Description>
+    <PackageTags>gcode parser</PackageTags>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
 </Project>
