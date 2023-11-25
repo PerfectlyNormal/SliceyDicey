@@ -7,11 +7,11 @@ public static class GcodeParser
     public static async Task<GcodeFile> Parse(string name, Stream input, CancellationToken cancellationToken)
     {
         var instructions = new List<GcodeInstruction>();
-        var thumbnails = new List<GcodeThumbnail>();
+        var thumbnails = new List<IGcodeThumbnail>();
 
         using var reader = new StreamReader(input, Encoding.UTF8);
         var lineNo = 0;
-        var thumbnail = (GcodeThumbnail?)null;
+        var thumbnail = (IGcodeThumbnail?)null;
         while (!reader.EndOfStream)
         {
             cancellationToken.ThrowIfCancellationRequested();
@@ -20,10 +20,10 @@ public static class GcodeParser
             if (string.IsNullOrWhiteSpace(line)) continue;
             if (line is null) break;
 
-            if (line.StartsWith(GcodeThumbnail.Prefix))
+            if (line.StartsWith(GcodePngThumbnail.Prefix))
             {
                 var parts = line.Split(' ');
-                thumbnail = new GcodeThumbnail(parts[3], long.Parse(parts[4]));
+                thumbnail = new GcodePngThumbnail(parts[3], long.Parse(parts[4]));
             }
             else if (thumbnail is not null && line.StartsWith(GcodeThumbnail.Suffix))
             {

@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="StreamCompare" Version="0.1.5" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -25,4 +26,13 @@
     <ProjectReference Include="..\SliceyDicey.Lib\SliceyDicey.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="input\calicat_png_thumbnails.gcode" />
+    <EmbeddedResource Include="input\calicat_no_thumbnails.gcode" />
+    <EmbeddedResource Include="output\calicat_16x16_from_png.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="output\" />
+  </ItemGroup>
 </Project>

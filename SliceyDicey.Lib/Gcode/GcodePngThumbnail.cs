@@ -1,11 +1,11 @@
 ﻿namespace SliceyDicey.Lib.Gcode;
 
-public class GcodeThumbnail
+public class GcodePngThumbnail : IGcodeThumbnail
 {
     public const string Prefix = "; thumbnail begin";
     public const string Suffix = "; thumbnail end";
 
-    public GcodeThumbnail(string dimensions, long size)
+    public GcodePngThumbnail(string dimensions, long size)
     {
         Dimensions = dimensions;
         Size = size;
@@ -14,14 +14,21 @@ public class GcodeThumbnail
 
     private byte[]? _data;
 
+    public string Format => "PNG";
+    public string Dimensions { get; }
+    public long Size { get; }
+    
     public void AddLine(string data)
     {
         Encoded += data.Trim();
     }
 
-    public string Dimensions { get; }
-    public long Size { get; }
-    public byte[] Data
+    public Stream GeneratePng()
+        => new MemoryStream(Data);
+
+    private string Encoded { get; set; }
+
+    private byte[] Data
     {
         get
         {
@@ -29,6 +36,4 @@ public class GcodeThumbnail
             return _data;
         }
     }
-
-    private string Encoded { get; set; }
 }
