@@ -29,10 +29,13 @@
   <ItemGroup>
     <EmbeddedResource Include="input\calicat_png_thumbnails.gcode" />
     <EmbeddedResource Include="input\calicat_no_thumbnails.gcode" />
+    <EmbeddedResource Include="input\calicat_qoi_thumbnails.gcode" />
+    <EmbeddedResource Include="output\calicat_16x16_from_qoi.png" />
     <EmbeddedResource Include="output\calicat_16x16_from_png.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="output\" />
   </ItemGroup>
+
 </Project>
