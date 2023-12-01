@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Divergic.Logging.Xunit" Version="4.3.0" />
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="StreamCompare" Version="0.1.5" />
@@ -32,6 +33,10 @@
     <EmbeddedResource Include="input\calicat_qoi_thumbnails.gcode" />
     <EmbeddedResource Include="output\calicat_16x16_from_qoi.png" />
     <EmbeddedResource Include="output\calicat_16x16_from_png.png" />
+    <EmbeddedResource Include="input\calicat_qoi_thumbnails_binary.bgcode" />
+    <EmbeddedResource Include="input\mini_cube_b.bgcode" />
+    <EmbeddedResource Include="input\filament_cap_hex_1h9m_0.10mm_205C_PLA_CR10SMARTPRO.bgcode" />
+    <EmbeddedResource Include="input\calicat_meatpack_no_comments.bgcode" />
   </ItemGroup>
 
   <ItemGroup>

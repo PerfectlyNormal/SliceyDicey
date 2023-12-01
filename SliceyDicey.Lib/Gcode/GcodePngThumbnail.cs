@@ -11,6 +11,11 @@ public class GcodePngThumbnail : IGcodeThumbnail
         Size = size;
         Encoded = "";
     }
+    
+    public GcodePngThumbnail(string dimensions, long size, Span<byte> data) : this(dimensions, size)
+    {
+        _data = data.ToArray();
+    }
 
     private byte[]? _data;
 
