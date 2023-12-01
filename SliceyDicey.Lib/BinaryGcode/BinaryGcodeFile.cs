@@ -1,4 +1,5 @@
 using SliceyDicey.Lib.BinaryGcode.Blocks;
+using SliceyDicey.Lib.Gcode;
 
 namespace SliceyDicey.Lib.BinaryGcode;
 
@@ -31,6 +32,16 @@ public class BinaryGcodeFile
         => Blocks
             .Where(x => x.Type == BlockType.Gcode)
             .Cast<GcodeBlock>();
+
+    public IEnumerable<GcodeInstruction> Instructions
+        => GcodeBlocks
+            .SelectMany(x => x.Instructions);
+
+    public IEnumerable<GcodeInstruction> Comments
+        => Instructions.Where(x => x.OnlyComment);
+
+    public IEnumerable<GcodeInstruction> Commands
+        => Instructions.Where(x => x.HasCommand);
 
     public Block AddBlock(Memory<byte> blockData)
     {
