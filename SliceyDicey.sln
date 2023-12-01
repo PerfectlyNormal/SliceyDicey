@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliceyDicey.Vendor.Heatshrink", "SliceyDicey.Vendor.Heatshrink\SliceyDicey.Vendor.Heatshrink.csproj", "{2E06C870-3FF0-4967-B69C-B39FD942ED62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliceyDicey.Vendor.Heatshrink.Tests", "SliceyDicey.Vendor.Heatshrink.Tests\SliceyDicey.Vendor.Heatshrink.Tests.csproj", "{5C87290D-E783-47BA-8906-1B97D97BC4CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8472AE0-5A8A-42FC-B257-F48617C29F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E06C870-3FF0-4967-B69C-B39FD942ED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E06C870-3FF0-4967-B69C-B39FD942ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E06C870-3FF0-4967-B69C-B39FD942ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E06C870-3FF0-4967-B69C-B39FD942ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C87290D-E783-47BA-8906-1B97D97BC4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C87290D-E783-47BA-8906-1B97D97BC4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C87290D-E783-47BA-8906-1B97D97BC4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C87290D-E783-47BA-8906-1B97D97BC4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
