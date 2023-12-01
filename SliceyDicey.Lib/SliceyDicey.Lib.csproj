@@ -16,10 +16,11 @@
     <RepositoryType>git</RepositoryType>
     <Authors>Per Christian B. Viken</Authors>
     <Description>
-			Provides a library for parsing ASCII-based GCode files
+			Provides a library for parsing GCode files, both ASCII and binary encoded.
     </Description>
     <PackageTags>gcode parser</PackageTags>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
 
   <ItemGroup>
@@ -34,7 +35,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SliceyDicey.Vendor.Heatshrink\SliceyDicey.Vendor.Heatshrink.csproj" />
+    <ProjectReference Include="..\SliceyDicey.Vendor.Heatshrink\SliceyDicey.Vendor.Heatshrink.csproj">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <IncludeAssets>SliceyDicey.Vendor.Heatshrink.dll</IncludeAssets>
+    </ProjectReference>
   </ItemGroup>
 
+  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
 </Project>
