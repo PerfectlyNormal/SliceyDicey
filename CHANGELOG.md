@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Changed
+
+- Update ImageSharp to v3.1.0
+- Remove custom QOI decoder and use ImageSharp directly
+
 ## [0.2.3] - 2023-12-03
 
 ### Fixed

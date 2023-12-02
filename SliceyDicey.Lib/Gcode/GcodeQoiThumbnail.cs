@@ -1,4 +1,4 @@
-using SliceyDicey.Lib.Qoi;
+using SixLabors.ImageSharp;
 
 namespace SliceyDicey.Lib.Gcode;
 
@@ -32,8 +32,7 @@ public class GcodeQoiThumbnail : IGcodeThumbnail
 
     public Stream GeneratePng()
     {
-        using var ms = new MemoryStream(Data);
-        var image = new QoiImageSharpDecoder().Read(ms);
+        var image = Image.Load(Data);
 
         var result = new MemoryStream();
         image.SaveAsPng(result);
