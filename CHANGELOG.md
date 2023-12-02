@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Fixed
+
+- Properly rewind stream after converting QOI to PNG
+
 ## [0.2.2] - 2023-12-02
 
 ### Fixed

@@ -37,6 +37,8 @@ public class GcodeQoiThumbnail : IGcodeThumbnail
 
         var result = new MemoryStream();
         image.SaveAsPng(result);
+
+        result.Seek(0, SeekOrigin.Begin);
         return result;
     }
 
