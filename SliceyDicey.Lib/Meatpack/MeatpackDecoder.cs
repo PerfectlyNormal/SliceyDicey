@@ -58,9 +58,8 @@ public class MeatpackDecoder
     /// </summary>
     private readonly List<byte> _unbinBuffer = new();
 
-    public string Unbinarize(byte[] src)
+    public string Unbinarize(IEnumerable<byte> src)
     {
-        File.WriteAllBytes("block.meatpack", src);
         var addSpace = false;
         foreach (var cBin in src)
         {
